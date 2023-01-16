@@ -18,9 +18,9 @@ Sample output is shown below.
 
 #Solution description
 
-the solution is an console app developed in .net core 6.0 (multiplatform)
+The solution is an console app developed in .net core 6.0 (multiplatform)
 
-The solution is compose for:
+It is compose for:
 	main class : program
 	interface: ICalculate
 	class: Calculate
