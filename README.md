@@ -16,8 +16,47 @@ Sample output is shown below.
 ​
 ```
 
+#Solution description
 
-#Pre requisites
+the solution is an console app developed in .net core 6.0 (multiplatform)
+
+The solution is compose for:
+	main class : program
+	interface: ICalculate
+	class: Calculate
+
+in the main class run a instace of class calculate that contains a function for print in scream the numbers the solution,
+here we used a redundan function that we helped to find the numbers inside in the array for the sum.
+  
+  ```
+  findSumPar(list, sum, 0, 1);
+  ```
+  
+  the logic for the function findSumPar is
+   ```
+    public Task findSumPar(int[] list, int sum, int x, int y)
+    {
+          
+            if (x < list.Length  && y < list.Length )
+            {
+                if ((list[x] + list[y] == sum))
+                {
+                    Console.WriteLine($"{list[x]},{list[y]} ");
+                }
+                if (y == list.Length-1)
+                {
+                    Thread thready = new Thread(async() => await findSumPar(list, sum, x + 1, x+2));
+                    thready.Start();
+                }
+
+                findSumPar(list, sum, x, y + 1);
+            }
+            return Task.CompletedTask;
+    }
+		```
+  
+  
+#Pre requisites for Run
 
 You need install .net core 6.0, here a guid for how install .net core in linux and windows:
 
