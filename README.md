@@ -100,5 +100,8 @@ Copy the publish
 Run .exe application
 ```
 
+Test Unit:
+We used test unit Nunit with a small test the app
+
 
 
