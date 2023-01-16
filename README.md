@@ -25,8 +25,8 @@ It is compose for:
 	interface: ICalculate
 	class: Calculate
 
-in the main class run a instace of class calculate that contains a function for print in scream the numbers the solution,
-here we used a redundan function that we helped to find the numbers inside in the array for the sum.
+in the main class run a instace of class calculate that contains a function for print in the screen the numbers the solution,
+here we used a redundant function that we helped to find the numbers inside in the array for the sum.
   
   ```
   findSumPar(list, sum, 0, 1);
